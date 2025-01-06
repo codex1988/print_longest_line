@@ -16,7 +16,7 @@ int main() {
   max_len = 0;
   while ((curr_len = get_line(current, MAX_LENGTH)) > 0) {
     if (curr_len > max_len) {
-      copy_line(current, longest);
+      copy_line(current, longest, MAX_LENGTH);
       max_len = curr_len;
     }
   }
