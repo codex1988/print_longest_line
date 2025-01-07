@@ -21,14 +21,6 @@ int main() {
     }
   }
 
-  // if we exceeds the maximum length then we truncates it
-  if (max_len >= MAX_LENGTH) {
-    printf("The maximum length of a line allowed to input is %d\n", MAX_LENGTH);
-    printf("You line is %d character long. It has been truncated\n", max_len);
-    longest[MAX_LENGTH - 1] = '\0';
-    max_len = MAX_LENGTH - 1;
-  }
-
   if (max_len > 0) {
     trim_line(longest, max_len);
     printf("Trimmed line => %s\n", longest);
