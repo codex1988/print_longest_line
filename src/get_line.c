@@ -20,7 +20,9 @@ int get_line(char s[], int lim) {
     // Return the number of characters captured (excluding null terminator)
     return i;
   } else if (c == '\n' && i >= lim - 1) {
-    printf("WARNING: You exceed the limit of line capacity. It's been truncated\n");
+    printf(
+        "WARNING: You exceed the limit of line capacity. It's been "
+        "truncated\n");
     printf("NOTE: The length of the full line is accurate.\n");
     s[lim - 2] = '\n';
     s[lim - 1] = '\0';

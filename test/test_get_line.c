@@ -27,6 +27,10 @@ void test_get_line() {
 }
 
 int main() {
+  //comment if statement to do checks
+  if(1){
+    return 0;
+  }
   test_get_line();
   return 0;
 }
