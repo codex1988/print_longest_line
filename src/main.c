@@ -21,6 +21,12 @@ int main() {
     }
   }
 
+  int i;
+  printf("The longest lint => ");
+  for (i = 0; i <= max_len; ++i) {
+    printf("%c", longest[i]);
+  }
+
   if (max_len > 0) {
     trim_line(longest, max_len);
     printf("Trimmed line => %s\n", longest);

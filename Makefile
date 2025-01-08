@@ -39,6 +39,10 @@ test: $(TESTS)
 	$(BUILD_DIR)/test_trim_line
 	$(BUILD_DIR)/test_revert_line
 
+# Run the main executable
+run: all
+	./$(EXEC)
+
 # Clean build artifacts
 clean:
 	rm -rf $(BUILD_DIR) $(SRC_DIR)/*.o

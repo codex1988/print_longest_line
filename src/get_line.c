@@ -31,6 +31,6 @@ int get_line(char s[], int lim) {
   } else {
     s[i++] = '\0';
     // Return the number of characters captured (excluding null terminator)
-    return i;
+    return i - 1;
   }
 }

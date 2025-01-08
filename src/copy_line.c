@@ -19,11 +19,6 @@ int copy_line(char from[], char to[], int lim) {
     }
   }
 
-  // if capacity of from[] is larger that capacity of to[] then failure.
-  if (i > y) {
-    return 1;
-  }
-
   i = 0;
   while ((to[i] = from[i]) != '\0') {
     ++i;
